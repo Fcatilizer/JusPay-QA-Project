@@ -44,10 +44,10 @@ continue_button.click()
 time.sleep(2)
 
 try:
-    accept_and_continue_button = driver.find_element(By.XPATH, '//*[@id="container"]/div/div[1]/div/div/button')
-    accept_and_continue_button.click()
+    offer_button = driver.find_element(By.XPATH, '//*[@id="container"]/div/div[1]/div/div/button')
+    offer_button.click()
 except:
-    print("Accept & Continue button not found")
+    print("Offer button not found")
 
 time.sleep(5)
 
