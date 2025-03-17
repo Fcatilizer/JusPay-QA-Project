@@ -44,10 +44,15 @@ continue_button.click()
 time.sleep(2)
 
 try:
-    accept_and_continue_button = driver.find_element(By.XPATH, '//*[@id="to-payment"]/button')
+    accept_and_continue_button = driver.find_element(By.XPATH, '//*[@id="container"]/div/div[1]/div/div/button')
     accept_and_continue_button.click()
 except:
     print("Accept & Continue button not found")
 
+time.sleep(5)
+
+driver.find_element(By.XPATH, '//*[@id="container"]/div/div[2]/div/div[1]/div[4]/div/div/div[2]/div/label[3]/div[2]/div/div').click()
+driver.find_element(By.NAME, 'cardNumber').send_keys('123456789')
+driver.find_element(By.NAME, 'cvv').send_keys('123')
 
 driver.quit()
