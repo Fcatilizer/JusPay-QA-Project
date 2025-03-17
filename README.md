@@ -2,6 +2,8 @@
 
 This project is to automate the JusPay QA test cases using Selenium WebDriver using either Java or Python.
 
+VIDEO LINK - [https://youtu.be/0A7WTn9ATlU](https://youtu.be/0A7WTn9ATlU)
+
 - Automate Searching for a 'smartwatch' on Flipkart
 - Select the first product
 - Changing the window to the new tab
